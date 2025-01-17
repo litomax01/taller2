@@ -45,114 +45,212 @@
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-10">Catálogo de Productos</h2>
-
-            <div class="text-center mb-8">
-                <button class="bg-primary text-white py-2 px-6 rounded hover:bg-blue-700 transition duration-300 mr-4" onclick="filterProducts('laptops')">Laptops</button>
-                <button class="bg-primary text-white py-2 px-6 rounded hover:bg-blue-700 transition duration-300 mr-4" onclick="filterProducts('accesorios')">Accesorios</button>
-                <button class="bg-primary text-white py-2 px-6 rounded hover:bg-blue-700 transition duration-300" onclick="filterProducts('todos')">Mostrar Todo</button>
-            </div>
-
             <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 laptops">
+
+             
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+    <img src="imagenes/tablet.jpg" alt="Tablet Samsung Galaxy Tab S7" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold">Tablet Samsung Galaxy Tab S7</h3>
+        <p class="mt-2 text-gray-600">Portabilidad y productividad en un solo dispositivo.</p>
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-lg font-bold text-primary">$800.00</span>
+            <button onclick="addToCart('Tablet Samsung Galaxy Tab S7', 800)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+    <img src="imagenes/google pixel.jpg" alt="Smartphone Google Pixel 6 Pro" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold">Smartphone Google Pixel 6 Pro</h3>
+        <p class="mt-2 text-gray-600">Cámara avanzada y rendimiento excepcional.</p>
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-lg font-bold text-primary">$999.00</span>
+            <button onclick="addToCart('Smartphone Google Pixel 6 Pro', 999)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+    <img src="imagenes/monitorlgultra.jpg" alt="Monitor LG UltraWide 34 pulgadas" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold">Monitor LG UltraWide 34 pulgadas</h3>
+        <p class="mt-2 text-gray-600">Pantalla inmersiva para trabajo y entretenimiento.</p>
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-lg font-bold text-primary">$450.00</span>
+            <button onclick="addToCart('Monitor LG UltraWide 34 pulgadas', 450)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+    <img src="imagenes/teclado logitech.webp" alt="Teclado Logitech MX Keys" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold">Teclado Logitech MX Keys</h3>
+        <p class="mt-2 text-gray-600">Diseño elegante y rendimiento profesional.</p>
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-lg font-bold text-primary">$120.00</span>
+            <button onclick="addToCart('Teclado Logitech MX Keys', 120)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+    <img src="imagenes/mouse razer.jpg" alt="Mouse Razer DeathAdder V2" class="w-full h-56 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold">Mouse Razer DeathAdder V2</h3>
+        <p class="mt-2 text-gray-600">Precisión óptica avanzada para gamers.</p>
+        <div class="flex justify-between items-center mt-4">
+            <span class="text-lg font-bold text-primary">$70.00</span>
+            <button onclick="addToCart('Mouse Razer DeathAdder V2', 70)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
                     <img src="imagenes/img10.png" alt="Laptop Gamer RTX 3060" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold">Laptop Gamer RTX 3060</h3>
                         <p class="mt-2 text-gray-600">Rendimiento extremo para gaming y trabajo.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg font-bold text-primary">$1,200.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+                            <button onclick="addToCart('Laptop Gamer RTX 3060', 1200)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 laptops">
+
+             
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
                     <img src="imagenes/img14.jpg" alt="Laptop Ultrabook Pro" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold">Laptop Ultrabook Pro</h3>
                         <p class="mt-2 text-gray-600">Portabilidad y potencia en un solo equipo.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg font-bold text-primary">$1,500.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+                            <button onclick="addToCart('Laptop Ultrabook Pro', 1500)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 laptops">
+
+              
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
                     <img src="imagenes/img15.png" alt="Laptop MacBook Air M2" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold">Laptop MacBook Air M2</h3>
                         <p class="mt-2 text-gray-600">Diseño elegante y rendimiento superior.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg font-bold text-primary">$1,800.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+                            <button onclick="addToCart('Laptop MacBook Air M2', 1800)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 accesorios">
-                    <img src="imagenes/img4.jpg" alt="Auriculares Gamer RGB" class="w-full h-56 object-cover">
+
+               
+<div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+                    <img src="imagenes/auriculares.jpg" alt="Auriculares Gamer RGB" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold">Auriculares Gamer RGB</h3>
                         <p class="mt-2 text-gray-600">Iluminación espectacular y sonido envolvente.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg font-bold text-primary">$200.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+                            <button onclick="addToCart('Auriculares Gamer RGB', 200)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 accesorios">
-                    <img src="imagenes/img5.jpg" alt="Mouse Gamer" class="w-full h-56 object-cover">
+
+               
+ <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300">
+                    <img src="imagenes/mouse gamer.webp" alt="Mouse Gamer" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold">Mouse Gamer</h3>
                         <p class="mt-2 text-gray-600">Precisión avanzada para juegos competitivos.</p>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg font-bold text-primary">$80.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
+                            <button onclick="addToCart('Mouse Gamer', 80)" class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 accesorios">
-                    <img src="imagenes/img6.jpg" alt="Teclado Mecánico RGB" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Teclado Mecánico RGB</h3>
-                        <p class="mt-2 text-gray-600">Personalización completa con iluminación RGB.</p>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="text-lg font-bold text-primary">$120.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 laptops">
-                    <img src="imagenes/img7.jpg" alt="Laptop Gaming HP Omen" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Laptop Gaming HP Omen</h3>
-                        <p class="mt-2 text-gray-600">Diseñada para los gamers más exigentes.</p>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="text-lg font-bold text-primary">$1,700.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 accesorios">
-                    <img src="imagenes/img8.jpg" alt="Monitor Samsung 4K" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Monitor Samsung 4K</h3>
-                        <p class="mt-2 text-gray-600">Calidad de imagen excepcional para trabajo y entretenimiento.</p>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="text-lg font-bold text-primary">$450.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 accesorios">
-                    <img src="imagenes/img9.jpg" alt="Disco Duro Externo 2TB" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Disco Duro Externo 2TB</h3>
-                        <p class="mt-2 text-gray-600">Espacio de almacenamiento confiable y portátil.</p>
-                        <div class="flex justify-between items-center mt-4">
-                            <span class="text-lg font-bold text-primary">$130.00</span>
-                            <button class="bg-primary text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Agregar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition transform duration-300 laptops">
-                    <img src="imagenes/img10.png"Laptop ASUS ROG Strix" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Laptop ASUS ROG Strix</h3
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">Carrito de Compras</h2>
+            <div id="cart-items" class="mb-4 text-center">
+                <p class="text-gray-500">Tu carrito está vacío.</p>
+            </div>
+            <div class="text-lg font-bold text-center" id="cart-total">Total: $0.00</div>
+            <button id="pay-button" onclick="processPayment()" class="mt-4 bg-accent text-white py-2 px-6 rounded hover:bg-green-600 transition duration-300" style="display: none;">Pagar</button>
+        </div>
+    </section>
+
+    <script>
+        let cart = [];
+
+        function addToCart(productName, price) {
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ name: productName, price: price, quantity: 1 });
+            }
+            updateCartDisplay();
+        }
+
+        function removeFromCart(productName) {
+            cart = cart.filter(item => item.name !== productName);
+            updateCartDisplay();
+        }
+
+        function calculateTotal() {
+            return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+        }
+
+        function updateCartDisplay() {
+            const cartContainer = document.getElementById('cart-items');
+            const totalContainer = document.getElementById('cart-total');
+            const payButton = document.getElementById('pay-button');
+            cartContainer.innerHTML = '';
+            if (cart.length === 0) {
+                cartContainer.innerHTML = '<p class="text-gray-500">Tu carrito está vacío.</p>';
+                totalContainer.innerText = 'Total: $0.00';
+                payButton.style.display = 'none';
+                return;
+            }
+            cart.forEach(item => {
+                const productRow = document.createElement('div');
+                productRow.classList.add('flex', 'justify-between', 'items-center', 'border-b', 'py-2');
+                productRow.innerHTML = `
+                    <span>${item.name} (x${item.quantity})</span>
+                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
+                    <button onclick="removeFromCart('${item.name}')" class="text-red-500 hover:underline">Eliminar</button>
+                `;
+                cartContainer.appendChild(productRow);
+            });
+            totalContainer.innerText = `Total: $${calculateTotal()}`;
+            payButton.style.display = 'block';
+        }
+
+        function processPayment() {
+            alert(`Gracias por tu compra. El total es $${calculateTotal()}.`);
+            cart = [];
+            updateCartDisplay();
+        }
+    </script>
+     </section>
+
+
+     <footer class="bg-gray-900 text-white py-6">
+         <div class="container mx-auto text-center">
+             <p class="text-gray-400">© 2025 TechWave. Todos los derechos reservados.</p>
+         </div>
+     </footer>
+</body>
+
+</html>

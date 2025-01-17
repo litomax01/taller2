@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - TechWave</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1D4ED8',
+                        secondary: '#64748B',
+                        accent: '#22C55E',
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            background: linear-gradient(to right, rgba(29, 78, 216, 0.8), rgba(34, 197, 94, 0.8)), url('https://source.unsplash.com/1600x900/?technology');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto py-20">
+        <h1 class="text-5xl font-bold text-center text-white drop-shadow-lg mb-6">Únete a TechWave</h1>
+        <p class="text-center text-gray-200 text-lg mb-10">Descubre la mejor tecnología y promociones exclusivas.</p>
+        <div class="max-w-lg mx-auto form-container p-8 shadow-2xl rounded-lg">
+            <form id="registrationForm">
+                <h2 class="text-2xl font-bold text-primary mb-6">Formulario de Registro</h2>
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo:</label>
+                    <input type="text" id="name" name="name" class="mt-2 w-full p-3 rounded border-gray-300 shadow-sm focus:ring-primary focus:border-primary" placeholder="Ingresa tu nombre completo" required>
+                    <p id="nameError" class="text-red-500 text-sm hidden">Por favor, ingresa tu nombre.</p>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="mt-2 w-full p-3 rounded border-gray-300 shadow-sm focus:ring-primary focus:border-primary" placeholder="ejemplo@correo.com" required>
+                    <p id="emailError" class="text-red-500 text-sm hidden">Por favor, ingresa un correo válido.</p>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="mt-2 w-full p-3 rounded border-gray-300 shadow-sm focus:ring-primary focus:border-primary" placeholder="Crea una contraseña" required>
+                    <p id="passwordError" class="text-red-500 text-sm hidden">La contraseña debe tener al menos 8 caracteres.</p>
+                </div>
+                <div class="mb-6">
+                    <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="mt-2 w-full p-3 rounded border-gray-300 shadow-sm focus:ring-primary focus:border-primary" placeholder="Repite tu contraseña" required>
+                    <p id="confirmPasswordError" class="text-red-500 text-sm hidden">Las contraseñas no coinciden.</p>
+                </div>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded hover:bg-blue-700 transition duration-300 font-bold text-lg">
+                    Registrarme
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('registrationForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let valid = true;
+
+            if (nameInput.value.trim() === '') {
+                nameError.classList.remove('hidden');
+                valid = false;
+            } else {
+                nameError.classList.add('hidden');
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                emailError.classList.remove('hidden');
+                valid = false;
+            } else {
+                emailError.classList.add('hidden');
+            }
+
+            if (passwordInput.value.length < 8) {
+                passwordError.classList.remove('hidden');
+                valid = false;
+            } else {
+                passwordError.classList.add('hidden');
+            }
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                confirmPasswordError.classList.remove('hidden');
+                valid = false;
+            } else {
+                confirmPasswordError.classList.add('hidden');
+            }
+
+            if (valid) {
+                alert('¡Registro exitoso! Ahora puedes iniciar sesión.');
+                form.reset();
+            }
+        });
+    </script>
+</body>
+</html>

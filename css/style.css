@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+.navbar .menu a:hover {
+    color: #22C55E;
+}
+
+.hero {
+    background: linear-gradient(to right, #1D4ED8, #2563EB);
+    color: white;
+}
+
+.section-title {
+    text-decoration: underline;
+    text-decoration-color: #22C55E;
+    text-underline-offset: 4px;
+}
+
+.footer {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+.footer a:hover {
+    color: #22C55E;
+}
